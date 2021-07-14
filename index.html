@@ -6,11 +6,16 @@
     <body>
         <h1>Simple Interest Calculator</h1>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+        Amount <input type="number" min="0"  id="principal">  <br/>
+        Interest Rate <input type="range" min="0" max="100"  id="rate">  
+        <br>
+        <br>
+        No. of Years <input type="number" min="0" step="1" id="years">  <br/>
+       <br>
 
-        <button onclick="compute()">Compute</button>
+        <button onclick="compute()">Compute Interest</button>
+        <p id="but">
+        </p>
+        
     </body>
 </html>
